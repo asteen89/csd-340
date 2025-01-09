@@ -1,0 +1,56 @@
+/* Alisa Steensen */
+/* Module 2.2 */
+/* 1/9/25 */
+
+html, body {
+    font-size: 16px; /*Set the HTML and body font size to 16px */
+  }
+  p {
+    font-weight: 400; /*Give the paragraph text a weight of 400 */
+  }
+  h1 {
+    font-weight: 700; /* Give the h1 a weight of 700 */ 
+  }
+  h2 {
+    font-weight: 500; /* Give the h2 a weight of 500 */
+  }
+  p {
+    line-height: 1.4cm; /* Give the text in the paragraphs a line-height of 1.4em */
+  }
+  h1 {
+    text-transform: uppercase; /* Make the h1 uppercase and center the text */ 
+    text-align: center;
+  }
+  h2 {
+    text-align: left; /* Give the h2 alignment to the left, and a top padding of 15px */
+    padding-top: 15px;
+  }
+  address {
+    text-align: center; /* Give the address a text alignment of center */
+  }
+  a {
+    font-weight: bold; /* Make the website URL bold with a font-size of 1.25em, font color of #4F3674, and remove the underline */
+    font-size: 1.25em;
+    color: #4F3674;
+    text-decoration: none;
+  }  
+  a:hover {
+    color: #D6A800; /* Change color on hover */
+    text-decoration: underline; /* Add underline on hover */
+  }
+  
+  a:active {
+    color: #3E2A47; /* Change color when the link has been visited */
+  }
+  a:focus {
+    color:#3E2A47;
+  }
+  a:visited {
+    color: #3E2A47; /* Change color when the link has been visited */
+  }
+  .sentence {
+    font-style: italic; /* Apply a font-style of italic to the CSS sentence class */
+  }
+  .intro {
+    text-indent: 2em; /* Indent the first line of the paragraph 2em */
+  }
