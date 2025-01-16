@@ -68,10 +68,10 @@ h1 {
 /* Give the bottom div a css value of float right and a margin-bottom of 20px */
 .full-width-div a {
     float: right; 
-    margin-bottom: 20px; 
-    text-decoration: underline; 
+    margin-bottom: 20px;  
 }
 
 .back-link:hover { /*Add :hover to the links and show the underlines when a cursor hovers over the links*/
-    color: red; /* Change link color on hover */
+    color: red;
+    text-decoration: underline; /* Change link color on hover */
 }
