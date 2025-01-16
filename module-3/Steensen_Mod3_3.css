@@ -1,5 +1,4 @@
-/* Alisa Steensen
-Module 3.3 */
+/* Alisa Steensen Module 3.3 */
 
 body {
     font-family: Arial; 
@@ -10,65 +9,69 @@ h1 {
     text-align: center;
 }
 
-/* The side-by-side divs must have a width of 45% */
+
 .side-by-side {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
+    align-items: stretch; 
 }
 
-/* The side-by-side divs must have a width of 45% */
+
 .left-div, .right-div {
-    width: 45%;
+    width: 45%; /* The side-by-side divs must have a width of 45%  */
 }
 
-/* Set the width of the last div to 100%, Give the last div a margin-top of 60% */
+/* Set the width of the last div to 100% */
 .full-width-div {
-    width: 100%;
-    margin-top: 60%;
+    width: 100%; 
+    margin-top: 60%; /* Give the last div a margin-top of 60% */
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
 }
 
-.box {
-    border-radius: 15px;  
-    padding: 10px;        
-}
-
-.box ol { /*Apply a 1px solid red border with a 15px border-radius to the ordered list and its' title. Give the ordered list a padding of 10px (the numbers will need to be inside the border; research list-style and list-style-position)*/
-    border: 1px solid red;
-    border-radius: 15px;
+/* Apply padding for the container */
+.container {
     padding: 10px;
-    list-style-position: inside;
-    font-weight: 300; /* Set the weight of the ol tags to 300 */
+    margin-top: 10px; /* Space between the title and the list */
 }
 
-
-.box ul { /*Apply 1 px dashed red border with a 15px border-radius to the unordered list and its' title. Give the unordered list a padding of 10px and change the bullet points to upper-roman (research list-style and list-style-position) */
-    border: 1px dotted red;
-    border-radius: 15px;
-    padding: 10px;
-    list-style-type: upper-roman;  /* Upper Roman numerals for list bullets */
-    list-style-position: inside;
-    font-weight: 300; /* Set the weight of the ul tags to 300 */
-}
-
-.box h3 {
-    font-weight: 500; /* Set the weight of the h3 tags to 500 */
+/* Set the weight of the h3 tags to 500 */
+.container h3, .containerdotted h3 {
+    font-weight: 500; /* Set the weight of h3 tags to 500 */
     margin-bottom: 10px;
     margin-top: 0;
 }
 
-
-.box ol, .box ul {
-    padding-left: 10px;
+/* Set the weight of the lists to 300 */
+.container {
+    list-style-position: inside;   
+    font-weight: 300;             
+    border: 1px solid red;   /*Apply a 1px solid red border with a 15px border-radius to the ordered list and its' title.*/     
+    border-radius: 15px;          
+    padding: 10px;       /*Give the ordered list a padding of 10px*/         
 }
 
+/* Unordered list styling */
+.containerdotted  {
+    list-style-type: upper-roman; 
+    list-style-position: inside;  
+    font-weight: 300;             
+    border: 1px dashed red;     /* Apply 1 px dashed red border with a 15px border-radius to the unordered list and its' title.*/  
+    border-radius: 15px;          
+    padding: 10px;                
+}
+
+.containerdotted ul {
+    list-style-type: upper-roman; /* Give the unordered list a padding of 10px and change the bullet points to upper-roman*/
+}
+
+/* Give the bottom div a css value of float right and a margin-bottom of 20px */
 .full-width-div a {
-    float: right;  /* Give the bottom div a css value of float right and a margin-bottom of 20px */
-    margin-bottom: 20px;
-    text-decoration: underline;
+    float: right; 
+    margin-bottom: 20px; 
+    text-decoration: underline; 
 }
 
 .back-link:hover { /*Add :hover to the links and show the underlines when a cursor hovers over the links*/
-    color: red;
+    color: red; /* Change link color on hover */
 }
