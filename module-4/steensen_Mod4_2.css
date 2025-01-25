@@ -1,0 +1,79 @@
+/* Alisa Steensen Module 4.2 */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the h1 text */
+h1 {
+    text-align: center;
+    color: rgba(207, 63, 19, 0.9);; /* Using rgba, add a different color to the h1, h3, and figcaption tags. optional. */
+}
+
+/* Apply a CSS grid with three columns for the 3 side-by-side divs (see the above resources section for help/assistance) */
+#image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+    padding: 20px;
+    margin-top: 10%;
+}
+
+.image-card {
+    text-align: center;
+    border: 2px solid rgba(207, 63, 19, 0.9); /* Border between each photo */
+    padding: 20%; /* Add padding around the images inside each card */
+}
+
+.image-card img {
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+/* Center the h3 text (title for each item) */
+h3 {
+    text-align: center;
+    color: rgba(207, 63, 19, 0.9); /* Using rgba, add a different color to the h1, h3, and figcaption tags. optional. */
+}
+
+/* Apply text-align center to the figure tag  (this will basically center the image in the div) */
+figure {
+    text-align: center;
+    border: rgba(207, 63, 19, 0.9);
+}
+
+/* Style for individual image cards */
+.aboutphoto {
+    text-align: center;
+    padding: 10px;
+
+}
+
+/* Images inside the cards */
+.aboutphoto img {
+    width: 100%; /* Responsive */
+    height: auto; /* Responsive */
+}
+
+/* Apply a font style of italic to the figcaption text and set the font-size to .75em */
+figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+    color: rgba(0, 0, 0, 0.6); /* Dark gray color */
+}
+/* Give the bottom div a css value of float right and a margin-bottom of 20px */
+.full-width-div a {
+    float: right; 
+    margin-bottom: 20px;  
+}
+
+.back-link {
+    text-decoration: none; 
+    color: blue; 
+    transition: color 0.3s ease, text-decoration 0.3s ease; 
+}
+
+.back-link:hover { /*Add :hover to the links and show the underlines when a cursor hovers over the links*/
+    color: red;
+    text-decoration: underline; /* Change link color on hover */
+}
