@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+header {
+    background-color: #D87093;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #D87093;
+    color: #D87093;
+    font-weight: 400;
+    padding-right: 10px;
+    font-style: italic;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; 
+    padding: 10px;
+}
+
+footer p {
+    color: white;
+    font-weight: 400;
+    padding: 10px;
+    font-style: italic;
+}
+
+footer a {
+    text-decoration: none; /* Removes the underline */
+    color: white; /* Sets the text color to white */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underlines the text when hovered */
+    color: #D87093;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+.navbar {
+    overflow: hidden; 
+    background-color: white; 
+    border-bottom: 15px solid #4a021a; 
+}
+
+.navbar a {
+    float: left; 
+    display: block; 
+    color: white; 
+    text-align: center; 
+    padding: 14px 16px; 
+    text-decoration: none; 
+}
+
+
+.navbar a:hover {
+    background-color: #4a021a; 
+    color: white; 
+}
+
+
+.container {
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 10px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 50%;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 2em;
+    color: #080606;
+    font-weight: 400;
+}
+
+.card-content {
+    padding: 2px 16px; 
+    transition: box-shadow 0.3s ease; 
+}
+
+.card-content:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); 
+}
