@@ -1,0 +1,232 @@
+/* Alisa Steensen Mod 6.3 Biosite CSS Landing Page */
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Header, content, footer */
+    min-height: 100vh; /* Full viewport height */
+
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Makes space for header, main content, and footer */
+    grid-template-columns: 1fr; /* Single column layout */
+}
+
+header {
+    justify-content: space-between; /* Space between header items */
+    
+    padding: 20px; /* Adds padding around the header */
+    font-family: Manrope, serif;
+}
+
+
+nav {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    justify-content: right;
+}
+
+ul li a {
+    text-decoration: none;
+    font-family: Manrope, serif;
+    color: #020202;
+    padding: 8px 16px;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+ul li a:hover {
+    color: #961d1d;
+}
+
+#headerphoto {
+    grid-column: span 2; /* Makes the photo span across both columns */
+    width: 10%; /* Ensures the image stretches across the full width of its container */
+    height: 125px; /* Set the desired height for the header image */
+    display: flex; /* Use flexbox to align the image */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    overflow: hidden; /* Ensure the image doesn't overflow */
+}
+
+/* Ensure the image fits within the container */
+#headerphoto img {
+    width: 100%; /* Make the image stretch to fill the container */
+    height: 100%; /* Make the image stretch to fill the container */
+    object-fit: cover; /* Ensure the image covers the entire space without distortion */
+}
+
+
+
+#content {
+    display: flex;
+    flex-direction: column; /* Ensure the content stacks vertically */
+    align-items: center; /* Center align content horizontally */
+    width: 100%; /* Ensure the content spans the full width */
+}
+
+/* Make homephoto span across all 3 columns */
+#homephoto {
+    grid-column: span 3; /* Span across all 3 columns */
+    width: 100%;
+}
+
+#about {
+    display: flex;
+    text-align: center; /* Center the heading */
+    margin: 20px 0; /* Space above and below the heading */
+    font-family: Manrope, serif; /* Ensure consistent font style */
+    font-size: 24px; /* Adjust size if needed */
+    color: #000;
+    font-style: normal;
+    font-weight: 400;
+    line-height:normal;
+}
+
+.image-card img {
+    width: 100%;
+    height: auto;
+}
+
+
+.image-cards {
+    display: flex;
+    justify-content: space-between; /* Space between cards */
+    gap: 20px; /* Space between cards */
+    width: 100%;
+}
+
+/* Make each card responsive */
+.image-card1, .image-card2, .image-card3 {
+    flex: 1 1 calc(33.33% - 20px); /* Each card takes up one-third of the width, minus some space for gaps */
+    box-sizing: border-box;
+    text-align: left;
+    margin-top: 20px;
+    padding: 20px;
+
+}
+
+.image-card1 img, .image-card2 img, .image-card3 img {
+    width: 100%; /* Make sure the images fill their containers */
+    height: auto;
+    object-fit: cover; /* Ensure the images cover the space */
+}
+
+.image-card1 img, 
+.image-card2 img, 
+.image-card3 img {
+    width: 100%; /* Ensures the images fill their containers */
+    height: auto;
+    object-fit: cover; /* Ensures the images cover the space */
+    border-radius: 10px; /* Slightly rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Drop shadow */
+}
+
+.hover-effect {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hover-effect:hover {
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.4);
+    transform: translateY(-4px);
+}
+
+h3 {
+    font-size: 2em;
+    margin-top: 10px;
+    font-family: Manrope, serif; /* Use font-family instead of font */
+}
+
+p {
+    font-size: 1.4em;
+    color: #555;
+    font-family: Manrope, serif; /* Use font-family instead of font */
+}
+
+.container footer {
+    color: black;
+}
+
+footer {
+    color: rgb(178, 13, 13);
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.image-hover {
+    overflow: hidden;
+    display: inline-block;
+}
+
+.image-hover img {
+    transition: transform 0.5s ease;
+}
+
+.image-hover:hover img {
+    transform: scale(1.1); /* Zooms the image */
+}
+
+/* Card container styles */
+.card {
+    background-color: #fff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    overflow: hidden; /* Hide overflow if image is too large */
+    margin: 20px; /* Add spacing between the cards */
+    padding: 20px; /* Add padding inside the card */
+    max-width: 600px; /* Set a max width for the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Image styles inside card */
+.card img {
+    width: 100%; /* Make the image fill the container */
+    border-radius: 8px; /* Rounded corners for the image */
+}
+
+/* Text styling inside card */
+.card h3 {
+    font-size: 22px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Hover effect on card */
+.card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Make the shadow stronger on hover */
+    transform: translateY(-5px); /* Lift the card a little on hover */
+}
+
+/* Container for all the image cards */
+.image-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* Spread the cards out evenly */
+}
