@@ -105,11 +105,11 @@ ul li a:hover {
     height: auto;
 }
 
-/* Ensure the image cards container uses flexbox for horizontal layout */
+
 .image-cards {
     display: flex;
     justify-content: space-between; /* Space between cards */
-    gap: 20px; /* Optional: space between the cards */
+    gap: 20px; /* Space between cards */
     width: 100%;
 }
 
