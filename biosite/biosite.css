@@ -1,4 +1,8 @@
-/* Alisa Steensen Mod 6.3 Biosite CSS Landing Page */
+/* Alisa Steensen Mod 7.2 Biosite CSS Landing Page */
+
+html {
+    scroll-behavior: smooth;
+}
 
 
 * {
@@ -57,20 +61,19 @@ ul li a:hover {
 }
 
 #headerphoto {
-    grid-column: span 2; /* Makes the photo span across both columns */
-    width: 10%; /* Ensures the image stretches across the full width of its container */
-    height: 125px; /* Set the desired height for the header image */
-    display: flex; /* Use flexbox to align the image */
-    justify-content: center; /* Center the image horizontally */
-    align-items: center; /* Center the image vertically */
-    overflow: hidden; /* Ensure the image doesn't overflow */
+    grid-column: span 2;
+    width: auto;  /* Let the width adjust naturally */
+    height: 190px;
+    display: flex;
+    justify-content: flex-start; /* Align the image to the left */
+    align-items: center;
+    overflow: hidden;
 }
 
-/* Ensure the image fits within the container */
 #headerphoto img {
-    width: 100%; /* Make the image stretch to fill the container */
-    height: 100%; /* Make the image stretch to fill the container */
-    object-fit: cover; /* Ensure the image covers the entire space without distortion */
+    width: auto;  /* Let the image width adjust naturally */
+    height: 100%; 
+    object-fit: cover; 
 }
 
 
@@ -166,10 +169,14 @@ p {
 }
 
 footer {
-    color: rgb(178, 13, 13);
-    text-align: center;
-    padding: 10px;
-    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    text-align: center; /* Center-align the text inside the footer */
+    padding: 10px; /* Add padding for spacing */
+    font-size: 10px;
+    color: rgb(2, 2, 2); /* Ensure text color is applied */
+    font-family: manrope, serif; /* Ensure consistency in font */
 }
 
 .image-hover {
@@ -231,3 +238,17 @@ footer {
     justify-content: space-evenly;
     object-fit: cover; /* Spread the cards out evenly */
 }
+/* Fade in when opening */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#content {
+    animation: fadeIn 2s ease-out;
+}
+

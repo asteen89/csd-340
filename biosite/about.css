@@ -1,4 +1,9 @@
-/*Alisa Steensen Module 6.3 Biosite About Page */
+/*Alisa Steensen Module 7.2 Biosite About Page */
+
+html {
+    scroll-behavior: smooth;
+}
+
 
 * {
     margin: 0;
@@ -76,20 +81,19 @@ ul li a:hover {
 }
 
 #headerphoto {
-    grid-column: span 2; /* Makes the photo span across both columns */
-    width: 10%; /* Ensures the image stretches across the full width of its container */
-    height: 125px; /* Set the desired height for the header image */
-    display: flex; /* Use flexbox to align the image */
-    justify-content: center; /* Center the image horizontally */
-    align-items: center; /* Center the image vertically */
-    overflow: hidden; /* Ensure the image doesn't overflow */
+    grid-column: span 2;
+    width: auto;  /* Let the width adjust naturally */
+    height: 190px;
+    display: flex;
+    justify-content: flex-start; /* Align the image to the left */
+    align-items: center;
+    overflow: hidden;
 }
 
-/* Ensure the image fits within the container */
 #headerphoto img {
-    width: 100%; /* Make the image stretch to fill the container */
-    height: 100%; /* Make the image stretch to fill the container */
-    object-fit: cover; /* Ensure the image covers the entire space without distortion */
+    width: auto;  /* Let the image width adjust naturally */
+    height: 100%; 
+    object-fit: cover; 
 }
 
 
@@ -121,8 +125,8 @@ ul li a:hover {
 
 .image2 img {
     max-width: 100%; /* Ensure image scales responsively */
-    width: 466px; /* Set a fixed width */
-    height: 609px; /* Set a fixed height */
+    width: 388px; /* Set a fixed width */
+    height: 426px; /* Set a fixed height */
     object-fit: cover; /* Maintain aspect ratio */
     object-position: center; /* Center the image content */
     flex-shrink: 0; /* Prevent the image from shrinking */
@@ -131,14 +135,32 @@ ul li a:hover {
 }
 
 .image2-text {
-    font-size: 18px;
-    padding: 10px; /* Add padding to control the inner spacing */
-    margin: 0 100px 20px 100px; /* Increase left and right margins */
-    line-height: 1.4; /* Adjust line height for better readability */
-    font-family: manrope, serif;
+    font-size: clamp(14px, 2vw, 18px); /* Adjust font size dynamically */
+    padding: 10px;
+    margin: 0 auto 20px auto; /* Center text with automatic left & right margins */
+    max-width: 80%; /* Prevents the text from stretching too wide */
+    line-height: 1.4;
+    font-family: "Manrope", serif;
     position: relative;
-    grid-column-start: auto;
+    text-align: left; /* Center text */
 }
+
+/* Responsive  */
+@media (max-width: 768px) {
+    .image2-text {
+        font-size: 16px;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .image2-text {
+        font-size: 14px;
+        max-width: 95%;
+        text-align: left; /* Align text to left on smaller screens */
+    }
+}
+
 
 
 .hover-effect {
@@ -163,6 +185,31 @@ footer {
     font-family: manrope, serif; /* Ensure consistency in font */
 }
 
+.box {
+    width: 80%; /* Make width responsive */
+    max-width: 1200px; /* Prevent it from getting too wide */
+    min-width: 300px; /* Prevent it from getting too small */
+    height: auto; /* Allow height to adjust based on content */
+    background-color: #f9f9f988;
+    padding: 20px;
+    margin: 10px auto; /* Center the box */
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
 
+/* Responsive */
+@media (max-width: 768px) {
+    .box {
+        width: 90%; /* Increase width on smaller screens */
+        padding: 15px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        width: 95%; /* Make it even wider on mobile */
+        padding: 10px;
+    }
+}
 
 
