@@ -1,0 +1,64 @@
+<!--Alisa Steensen-->
+<!--Module 10.3-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSD 340 Development with HTML and CSS</title>
+    <meta name="description" content="Module 2.2">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="author" content="Alisa Steensen">
+    <link href="steensenMod2_2.css" type="text/css" rel="stylesheet" />
+    <style>
+        img {
+            width: 250px; 
+            height: auto; 
+        }
+    </style>
+    <script>
+        function changeImage(id, newSrc) {
+            document.getElementById(id).src = newSrc;
+        }
+
+        function changeTextColor(id, color) {
+            document.getElementById(id).style.color = color;
+        }
+    </script>
+</head>
+<title>
+</title>
+<body>
+    <div id="container">
+    <h1 id="assignment-title" onmouseover="changeTextColor('assignment-title', 'red')" 
+        onmouseout="changeTextColor('assignment-title', 'black')">
+        Assignment 10.3: JavaScript - Part 2
+    </h1>
+
+    <img id="pikachu" src="images/Sad-Pikachu.avif" alt="Sad Pikachu" 
+         onmouseover="changeImage('pikachu', 'images/happy-pikachu.jpg')" 
+         onmouseout="changeImage('pikachu', 'images/Sad-Pikachu.avif')">
+
+    <p id="text1" onmouseover="changeTextColor('text1', 'red')" 
+       onmouseout="changeTextColor('text1', 'black')">
+        Run your mouse over the image to change.
+    </p>
+
+    <img id="bulbasaur" src="images/crying-bulbasaur-pokemon.avif" alt="Sad Bulbasaur" 
+         onmouseover="changeImage('bulbasaur', 'images/Bulbasaur.avif')" 
+         onmouseout="changeImage('bulbasaur', 'images/crying-bulbasaur-pokemon.avif')">
+         
+    <p id="text2" onmouseover="changeTextColor('text2', 'red')" 
+       onmouseout="changeTextColor('text2', 'black')">
+        Run your mouse over the image to change.
+        Right-click and select View Source for more details.
+    </p>
+    </div>
+</body>
+</html>
+
+
+
+
+
