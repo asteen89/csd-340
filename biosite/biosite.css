@@ -157,13 +157,13 @@ ul li a:hover {
 h3 {
     font-size: 2em;
     margin-top: 10px;
-    font-family: Manrope, serif; /* Use font-family instead of font */
+    font-family: Manrope, serif; 
 }
 
 p {
     font-size: 1.4em;
     color: #555;
-    font-family: Manrope, serif; /* Use font-family instead of font */
+    font-family: Manrope, serif; 
 }
 
 .container footer {
