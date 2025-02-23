@@ -1,11 +1,10 @@
 <!-- Alisa Steensen Module 7.2 Hobbies PAge-->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biosite Test</title>
+    <title>Josh Kreifels Biosite</title>
     <link href="hobbies.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -15,48 +14,62 @@
             <div class="image-card" id="headerphoto">
                 <img src="images/JoshKreifels2.png" alt="Header Image">
             </div>
-            <nav aria-label="Main-Navigation">
+            <nav aria-label="Main Navigation">
                 <ul>
-                    <li><a href="index.html" class="back-link" aria-label="Go Home">Home</a></li> <!-- Added aria labels-->
-                    <li><a href="about.html" aria-label="Go to about page">About</a></li>
-                    <li><a href="hobbies.html" aria-label="Go to hobbies page">Hobbies</a></li>
+                    <li><a href="index.html" class="back-link" aria-label="Go Home">Home</a></li>
+                    <li><a href="about.html" aria-label="Go to About page">About</a></li>
+                    <li><a href="hobbies.html" aria-label="Go to Hobbies page">Hobbies</a></li>
                 </ul>
             </nav>
         </header>
 
         <div id="content">
             <div class="image" id="homephoto">
-                <img src="images/Hobbies.png" alt="Home Photo">
+                <img src="images/Hobbies.png" alt="Josh’s Hobbies">
             </div>
 
-            <!-- Image Section 2 -->
-            <div class="image-section image2">
-                <img src="images/338386708_1201215157197098_5076567864441199620_n.jpg" class="hover-effect" alt="Image 2.1">
-                <img src="images/b7447abe-a6f5-4684-9918-2497640e8382.jpg" class="hover-effect" alt="Image 2.2">
-                <img src="images/image03.jpeg"class="hover-effect" alt="Image 2.3">
-            </div>
-            <p class="image-description">Josh keeps himself busy with Krav Maga and Jiu-Jitsu, which he enjoys not only as a way to stay physically fit but also as a method to build endurance and mental toughness. For him, it's more than just a workout, it's a practice that sharpens both body and mind.</p>
-            <!-- Add Text and Button Here -->
-            <div class="more-info-container">
-                <p class="more-info-text">For more information about Krav Maga and Jiu-Jitsu:</p>
+            <!-- Hobby Section 1: Krav Maga & Jiu-Jitsu -->
+            <div class="card">
+                <div class="image-section">
+                    <img src="images/338386708_1201215157197098_5076567864441199620_n.jpg" class="hover-effect" alt="Josh training in Krav Maga">
+                    <img src="images/b7447abe-a6f5-4684-9918-2497640e8382.jpg" class="hover-effect" alt="Josh practicing Jiu-Jitsu">
+                    <img src="images/image03.jpeg" class="hover-effect" alt="Josh in martial arts training">
+                </div>
+                <p class="image-description">
+                    Josh keeps himself busy with Krav Maga and Jiu-Jitsu, which he enjoys not only as a way to stay physically fit but also as a method to build endurance and mental toughness. For him, it's more than just a workout—it's a practice that sharpens both body and mind.
+                </p>
+                <div class="more-info-container">
+                    <p class="more-info-text">For more information about Krav Maga and Jiu-Jitsu:</p>
                     <div class="button-link">
-                        <button class="styled-button" onclick="window.open"('https://sgskravmaga.com.au/krav-maga-vs-bjj/#:~:text=The%20main%20difference%20between%20Brazilian,Both%20have%20their%20benefits', '_blank')">
+                        <button class="styled-button" onclick="window.open('https://sgskravmaga.com.au/krav-maga-vs-bjj/#:~:text=The%20main%20difference%20between%20Brazilian,Both%20have%20their%20benefits', '_blank')">
                             Click Here
                         </button>
                     </div>
+                </div>
             </div> 
-            <!-- Image Section 3 -->
-            <div class="image-section image3">
-                <img src="images/weightlifting.png" class="hover-effect" alt="Image 3.1">
-                <img src="images/image1.jpeg" class="hover-effect" alt="Image 3.2">
-                <img src="images/image0.jpeg" class="hover-effect" alt="Image 3.3">
-            </div>
-            <p class="image-description">Josh spends many hours bodybuilding and strength training, pushing himself to achieve new personal goals and enjoying the process of building mental discipline.</p>
 
-            <!-- Image Section 4 -->
-            <div class="image-section image4">
-                <img src="images/464260961_10224461259259233_1097996059550392883_n.jpg" class="hover-effect" alt="Image 4.1">
-                <p>Josh enjoys going to the shooting range, where he practices his marksmanship and finds it both a challenging and relaxing way to focus and improve his skills.</p>
+            <!-- Hobby Section 2: Bodybuilding & Strength Training -->
+            <div class="card">
+                <div class="image-section">
+                    <img src="images/weightlifting.png" class="hover-effect" alt="Josh lifting weights">
+                    <img src="images/image1.jpeg" class="hover-effect" alt="Josh during strength training">
+                    <img src="images/image0.jpeg" class="hover-effect" alt="Josh’s weightlifting setup">
+                </div>
+                <p class="image-description">
+                    Josh spends many hours bodybuilding and strength training, pushing himself to achieve new personal goals and enjoying the process of building mental discipline.
+                </p>
+            </div>
+
+            <!-- Hobby Section 3: Shooting & Marksmanship -->
+            <div class="card">
+                <div class="image-section">
+                    <img src="images/464260961_10224461259259233_1097996059550392883_n.jpg" class="hover-effect" alt="Josh practicing at the shooting range">
+                    <img src="images/INNER10-1024x576.jpg" class="hover-effect" alt="Josh practicing at the shooting range">
+                    <img src="images/341777978_1596696580753995_8686202670612879103_n.jpg" class="hover-effect" alt="Josh practicing at the shooting range">
+                </div>
+                <p class="image-description">
+                    Josh enjoys going to the shooting range, where he practices his marksmanship. He finds it both a challenging and relaxing way to focus and improve his skills.
+                </p>
             </div>
         </div>
 

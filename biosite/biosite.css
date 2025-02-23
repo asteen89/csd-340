@@ -101,6 +101,8 @@ ul li a:hover {
     font-style: normal;
     font-weight: 400;
     line-height:normal;
+    line-height: 2;
+    text-shadow: 0 0 50px #aaa;
 }
 
 .image-card img {

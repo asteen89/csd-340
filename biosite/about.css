@@ -141,8 +141,10 @@ ul li a:hover {
     max-width: 80%; /* Prevents the text from stretching too wide */
     line-height: 1.4;
     font-family: "Manrope", serif;
-    position: relative;
+    position: relative;line-height: 2;
+    text-shadow: 0 0 50px #aaa;
     text-align: left; /* Center text */
+    
 }
 
 /* Responsive  */
