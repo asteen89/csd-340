@@ -1,0 +1,50 @@
+<!--Alisa Steensen-->
+<!--Module 11.2-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <style>
+        ul {
+            list-style-type: none; 
+            padding-left: 0; 
+        }
+    </style>
+    <script>
+        var entries = [];
+        function addEntry() { // function to add an entry to the list
+            var entry = document.getElementById("entry").value;
+            entries.push(entry);
+            document.getElementById("entry").value = "";
+
+            alert("Added: " + entry);
+        }
+
+        function deleteLastItem() { // function to delete last item from the list
+            entries.pop();
+        }
+
+        function displayAll() { // function to display all items in the list
+            var list = "<ul>";
+            for (var i = 0; i < entries.length; i++) {
+                list += "<li>Item " + (i + 1) + ": " + entries[i] + "</li>";
+            }
+            list += "</ul>";
+            document.getElementById("display").innerHTML = list;
+        }
+        
+    </script>
+</head>
+<body>
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+    <div class="container">
+        <p>This is an interactive To Do List. Type in your first item in the text box, then click Add. Click the Display button to see current items in the list. Click on Delete Last Entry if you'd like to remove the last entry.</p>
+        <input type="text" id="entry" placeholder="Enter a value">
+        <button onclick="addEntry()">Add</button>
+        <button onclick="deleteLastItem()">Delete Last Entry</button>
+        <button onclick="displayAll()">Display</button>
+        <div id="display"></div>
+    </div>
+</body>
+</html>
