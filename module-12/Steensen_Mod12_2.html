@@ -1,0 +1,99 @@
+<!--Alisa Steensen
+Module 12.2 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link href="Steensen_Mod12_2.css" type="text/css" rel="stylesheet">
+    <script>
+        // Array of books
+        var books = [
+            "1. The Lord Of The Rings",
+            "2. The Hobbit",
+            "3. Star Wars",
+            "4. Remember Me",
+            "5. The Chronicles Of Narnia",
+            "6. The Hunger Games",
+            "7. Harry Potter",
+            "8. The Fault In Our Stars",
+            "9. Twilight",
+            "10. Game Of Thrones"
+        ];
+
+        // Function to display books in ascending order 1 to 10
+        function ToptoBottom() {
+            var ol = document.querySelector("ol");
+            
+            ol.innerHTML = "";
+            // Add the books to the list in original order 1 to 10
+            books.forEach(function(book) {
+                var li = document.createElement("li");
+                li.textContent = book;
+                ol.appendChild(li);
+            });
+        }
+
+        // Function to display books in descending order 10 to 1
+        function BottomtoTop() {
+            var ol = document.querySelector("ol");
+            
+            ol.innerHTML = "";
+            // Add the books to the list in reverse order 10 to 1
+            for (var i = books.length - 1; i >= 0; i--) {
+                var li = document.createElement("li");
+                li.textContent = books[i];
+                ol.appendChild(li);
+            }
+        }
+
+        // Display the books when the page loads
+        window.onload = function() {
+            ToptoBottom();  // Show the list in ascending order 1 to 10
+        };
+    </script>
+</head>
+<body>
+    <div id="container">
+        <h1>Assignment 12.2: JavaScript - Part 4</h1>
+    </div>
+
+    <div class="side-by-side"> 
+        
+        <div class="left-div">
+            <div class="container"> 
+                <h3>Top 10 Favorite Books</h3> 
+                <button onclick="ToptoBottom()">Top to Bottom</button>
+                <button onclick="BottomtoTop()">Bottom to Top</button>
+                <ol>
+                    <!-- Books will be displayed here -->
+                </ol>
+            </div>
+        </div>
+
+        
+        <div class="right-div">
+            <div class="containerdotted"> 
+                <h3>5 Things I’ve Learned Since the Course Started</h3> 
+                <ul>
+                    <li>How to create a web page</li>
+                    <li>How to use HTML and CSS</li>
+                    <li>How to use the W3C HTML Validator</li>
+                    <li>How to use the W3C CSS Validator</li>
+                    <li>How to create divs</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="full-width-div"> 
+        <a href="../index.html" class="back-link">Back to Landing Page</a>
+    </div>
+</body>
+</html>
+
+
+
+
+
+

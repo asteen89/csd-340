@@ -1,0 +1,89 @@
+/* Alisa Steensen Module 12.2 */
+
+body {
+    font-family: Arial; 
+}
+
+/* The h1 title must be centered on the page */
+h1 {
+    text-align: center;
+}
+
+
+.side-by-side {
+    display: flex;
+    justify-content: space-between; 
+    align-items: stretch; 
+}
+
+
+.left-div, .right-div {
+    width: 45%; /* The side-by-side divs must have a width of 45%  */
+}
+
+/* Set the width of the last div to 100% */
+.full-width-div {
+    width: 100%; 
+    margin-top: 60%; /* Give the last div a margin-top of 60% */
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Apply padding for the container */
+.container {
+    padding: 10px;
+    margin-top: 10px; /* Space between the title and the list */
+}
+
+/* Set the weight of the h3 tags to 500 */
+.container h3, .containerdotted h3 {
+    font-weight: 500; /* Set the weight of h3 tags to 500 */
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+/* Set the weight of the lists to 300 */
+.container {
+    list-style-position: inside;   
+    font-weight: 300;             
+    border: 1px solid red;   /*Apply a 1px solid red border with a 15px border-radius to the ordered list and its' title.*/     
+    border-radius: 15px;          
+    padding: 10px;       /*Give the ordered list a padding of 10px*/         
+}
+
+/* Unordered list styling */
+.containerdotted  {
+    list-style-type: upper-roman; 
+    list-style-position: inside;  
+    font-weight: 300;             
+    border: 1px dashed red;     /* Apply 1 px dashed red border with a 15px border-radius to the unordered list and its' title.*/  
+    border-radius: 15px;          
+    padding: 10px;                
+}
+
+.containerdotted ul {
+    list-style-type: upper-roman; /* Give the unordered list a padding of 10px and change the bullet points to upper-roman*/
+}
+
+/* Give the bottom div a css value of float right and a margin-bottom of 20px */
+.full-width-div a {
+    float: right; 
+    margin-bottom: 20px;  
+}
+
+.back-link {
+    text-decoration: none; 
+    color: blue; 
+    transition: color 0.3s ease, text-decoration 0.3s ease; 
+}
+
+.back-link:hover { /*Add :hover to the links and show the underlines when a cursor hovers over the links*/
+    color: red;
+    text-decoration: underline; /* Change link color on hover */
+}
+
+ol {
+    list-style-type: none; 
+    padding: 10px; 
+    margin: 0; 
+}
